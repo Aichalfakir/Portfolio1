@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aicha Lfakir - My Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5EDE1;
+            color: #4E342E;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Barre de navigation */
+        .navbar {
+            background-color: #6D4C41;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar h2 {
+            font-size: 24px;
+            color: #F5EDE1;
+            font-weight: bold;
+            margin: 0 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #F5EDE1;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #B71C1C;
+        }
+
+        /* Conteneur principal */
+        .container {
+            max-width: 1100px;
+            margin: 100px auto 50px;
+            padding: 20px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .left-column, .right-column {
+            flex: 1;
+        }
+
+        /* Style des sections */
+        .section {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            background-color: #6e0505;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .section p, .section ul {
+            font-size: 16px;
+            color: #5D4037;
+            margin: 10px 0;
+        }
+
+        .list {
+            padding-left: 20px;
+        }
+
+        .list li {
+            margin: 10px 0;
+        }
+
+        /* Responsive : mode colonne sur petits écrans */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            background-color: #6D4C41;
+            color: #F5EDE1;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header avec navigation -->
+    <header>
+        <nav class="navbar">
+            <h2>My Resume</h2>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteneur principal avec deux colonnes -->
+    <div class="container">
+
+        <!-- Colonne gauche : Infos & Compétences -->
+        <div class="left-column">
+            <div class="section">
+                <h2>Personal Information</h2>
+                <p><strong>Prénom :</strong> Aicha</p>
+                <p><strong>Nom :</strong> Lfakir</p>
+                <p><strong>Email :</strong> <a href="mailto:alfaak003@gmail.com">alfaak003@gmail.com</a></p>
+                <p><strong>Téléphone :</strong> +1 613 261-1580</p>
+            
+                <h2>Soft Skills</h2>
+                <ul class="list">
+                    <li>Strong problem-solving & analytical thinking</li>
+                    <li>Teamwork & collaboration</li>
+                    <li>Effective time management</li>
+                    <li> Adaptability & quick learning</li>
+                </ul>
+                <h2>Education</h2>
+                <p><strong>University of Ottawa</strong></p>
+                <p>HONOURS BSC MATHEMATICS & HONOURS BSC COMPUTER SCIENCE (DATA SCIENCE)</p>
+                <p><strong>Status :</strong> currently enrolled</p>
+                <h2>Technical Skills</h2>
+                <ul class="list">
+                    <li><strong>Programming Languages:</strong> Python, Java, SQL, R, HTML, CSS, JavaScript, C, SAS</li>
+                    <li><strong>Databases:</strong> MySQL, PostgreSQL, Firebase</li>
+                    <li><strong>Data Science & AI:</strong>
+                        <ul>
+                            <li>Data Cleaning & Processing with Pandas & NumPy</li>
+                            <li>Predictive Modeling using scikit-learn, TensorFlow, PyTorch</li>
+                            <li>Data Visualization with Matplotlib, Seaborn, Power BI</li>
+                        </ul>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Colonne droite : Expérience & Éducation -->
+        <div class="right-column">
+            <div class="section">
+                <h2>Work Experience</h2>
+                <ul class="list">
+                    <li><strong>Optimizing Public Health Data Analysis with Machine Learning</strong> - Academic Project</li>
+                    <ul>
+                        <li>Analyzed public health datasets using Machine Learning (LightGBM, Random Forest).</li>
+                        <li>Performed data preprocessing and cleaning using Pandas & NumPy.</li>
+                        <li>Created interactive reports with Jupyter Notebook.</li>
+                        
+                    </ul>
+                    <li><strong>Implementation of a Hotel Reservation Management System </strong> - Academic Project</li>
+                    <article>
+                        <p>
+                            Implementation of a database management system for a hotel, 
+                            including the development of an interactive web platform to manage room reservations.
+                            Technologies used: HTML and CSS for the structure and user interface design, 
+                            PHP for server-side data management, and MySQL for database management.
+                        </p>
+                    </article>
+                    <li><strong>Exploratory Data Analysis on Car Prices & Mobile User Behavior </strong> - Academic Project</li>
+                    <ul>
+                        <li>Car Price Dataset – Analyzed factors influencing car pricing, such as brand, model, production year, engine size, mileage, 
+                            fuel type, transmission type, and owner count.</li>
+                        <li>Mobile User Behavior Dataset – Explored patterns in smartphone usage, focusing on app usage time, screen time, battery consumption, 
+                            and differences between Android and iOS users.</li>                        
+                    </ul>
+                </ul>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        © 2025 Aicha Lfakir - Tous droits réservés
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+# Portfolio Web - Aicha Lfakir
+
+# URL du site web hébergé
+https://aichalfakir.github.io/Portfolio/
+
+J'ai choisi GitHub Pages pour son accessibilité, 
+permettant une mise à jour facile et un accès public rapide.
